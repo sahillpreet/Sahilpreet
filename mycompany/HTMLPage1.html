@@ -1,0 +1,400 @@
+﻿
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Freelancing Services</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        /* Main Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: deepskyblue;
+        }
+
+
+            header h1 {
+                position: absolute;
+                top: 0;
+                left: 15px;
+                font-size: 45px;
+            }
+
+        name h1, h2 {
+            text-align: center;
+        }
+
+
+
+        nav ul {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+            position: absolute;
+            top: 0;
+            right: 15px;
+        }
+
+        nav li a {
+            color: #333;
+            text-decoration: none;
+            padding: 0.5rem;
+            transition: all 0.3s ease-in-out;
+            font-weight: bold;
+        }
+
+            nav li a:hover {
+                background-color: #333;
+                color: #fff;
+            }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+            section h2 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            section ul {
+                list-style: none;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
+            }
+
+            section li {
+                position: relative;
+                overflow: hidden;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background-color: #E9F1FA;
+            }
+
+                section li img {
+                    max-width: 100%;
+                    height: auto;
+                }
+
+                section li p {
+                    padding: 1rem;
+                }
+
+        .btn {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+
+            .btn:hover {
+                background-color: #fff;
+                color: #333;
+                border: 1px solid #333;
+            }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+            .image-container img {
+                max-width: 20%;
+                height: 20%;
+            }
+
+
+
+
+
+
+
+
+        .categories {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+            .categories h2 {
+                font-size: 36px;
+                margin-bottom: 30px;
+            }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+
+            .category-grid a {
+                display: block;
+                padding: 20px;
+                background-color: #fff;
+                color: #000;
+                border-radius: 5px;
+                text-decoration: none;
+                font-size: 24px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease-in-out;
+            }
+
+                .category-grid a:hover {
+                    transform: scale(1.1);
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+                }
+
+        .gallery {
+            padding: 20px;
+        }
+
+            .gallery h2 {
+                font-size: 32px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+            .gallery-container img {
+                width: 350px;
+                height: 500px;
+                object-fit: cover;
+                margin: 10px;
+                border: 1px solid #ddd;
+            }
+
+        footer {
+            background-color: deepskyblue;
+            text-align: center;
+            font-weight: 400;
+            padding: 2px;
+        }
+
+        .google-map {
+            padding-bottom: 50%;
+            position: relative;
+        }
+
+            .google-map iframe {
+                height: 100%;
+                width: 100%;
+                left: 0;
+                top: 0;
+                position: absolute;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> WriteCode Services  </h1>
+        <br />
+        <br />
+        <br />
+
+
+
+
+        <div class="categories">
+            <h2>Explore Categories</h2>
+            <div class="category-grid">
+                <a href="#">Writing Services</a>
+                <a href="#">Web designing</a>
+                <a href="gallery.com">Drawings</a>
+                <a href="#"> IELTS Training</a>
+
+
+            </div>
+        </div>
+
+        <br />
+        <br />
+
+
+
+
+
+
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h2>Welcome to Your Freelancing Services</h2>
+            <p>Get the professional services you need to help grow your business or advance your career. Our talented freelancers offer a range of services to help you succeed.</p>
+            <a href="#services" class="btn"> Get your work done at affordable prices!</a>
+        </section>
+
+        <name>
+            <div class="image-container">
+                <img src="sahil.jpg" alt="Your Name">
+            </div>
+            <h1>Sahil Randhawa </h1>
+            <h2>FREELANCER</h2>
+        </name>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>
+                    <h3>Writing Services</h3>
+                    <p>We offer professional writing services including email writing, essay writing, and content creation.</p>
+                </li>
+                <li>
+                    <h3>Website Design</h3>
+                    <p>Our website designers create beautiful and functional websites that help businesses grow and succeed.</p>
+                </li>
+                <li>
+                    <h3>Drawings</h3>
+                    <p>We offer high-quality drawings and illustrations to help bring your ideas to life.</p>
+                </li>
+                <li>
+                    <h3>IELTS Training</h3>
+                    <p>Our IELTS training services help students achieve the scores they need to succeed.</p>
+                </li>
+            </ul>
+
+        </section>
+        <section id="portfolio">
+            <h2>Our Portfolio</h2>
+            <ul>
+                <li>
+                    <img src="example1.jpg" alt="Example 1">
+                    <p>Example 1 Description</p>
+                </li>
+                <li>
+                    <img src="example2.jpg" alt="Example 2">
+                    <p>Example 2 Description</p>
+                </li>
+                <li>
+                    <img src="example3.jpg" alt="Example 3">
+                    <p>Example 3 Description</p>
+                </li>
+            </ul>
+
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a team of talented freelancers who offer a range of services to help businesses and individuals succeed. Our mission is to provide high-quality, professional services at affordable prices.</p>
+            <a href="#contact" class="btn">Contact Us</a>
+        </section>
+    </main>
+
+    <a href="https://wa.me/2363326636">
+        <img src="icon1.png" alt="WhatsApp" width="70" height="70">
+    </a>
+
+
+    <a href="https://www.instagram.com/sahil_randhawa_13/">
+        <img src="icon2.png" alt="Instagram" width="60" height="60">
+    </a>
+
+    <div class="contact-info">
+        <i class="fa fa-envelope"></i> <a href="mailto:sahilrandhawa1301@gmail.com">sahilrandhawa1301@gmail.com</a><br>
+        <i class="fa fa-phone"></i> <a href="tel:+1236-332-6636">236-332-6636</a>
+    </div>
+
+
+    <section class="Gallery">
+        <h2>Drawings</h2>
+        <div class="gallery-container">
+            <img src="img1.jpg" alt="Drawing 1">
+            <img src="img2.jpg" alt="Drawing 2">
+            <img src="img3.jpg" alt="Drawing 3">
+            <img src="img4.jpg" alt="Drawing 4">
+
+        </div>
+    </section>
+    <div class="google-map">
+        <iframe src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2609.480553066452!2d-122.90343632381969!3d49.15348617989486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d913b37fe639%3A0xcb669ac2484ab5fe!2s8254%20116%20St%2C%20Delta%2C%20BC%20V4C%205V1!5e0!3m2!1sen!2sca!4v1694673344867!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> " width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <script>
+
+        // Smooth Scrolling
+        $('nav a').on('click', function (event) {
+            if (this.hash !== '') {
+                event.preventDefault();
+                const hash = this.hash;
+                $('html, body').animate(
+                    {
+                        scrollTop: $(hash).offset().top
+                    },
+                    800
+                );
+            }
+        });
+
+        // Mobile Navigation
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelectorAll('.nav__link');
+
+        navToggle.addEventListener('click', () => {
+            document.body.classList.toggle('nav-open');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                document.body.classList.remove('nav-open');
+            });
+        });
+
+
+
+
+
+
+
+    </script>
+
+    <script>
+        const colors = ['#F44336', '#9C27B0', '#3F51B5', '#4CAF50', '#FFEB3B', '#FF5722'];
+        let currentIndex = 0;
+
+        function changeHeaderBackground() {
+            document.querySelector('header').style.backgroundColor = colors[currentIndex];
+            currentIndex = (currentIndex + 1) % colors.length;
+        }
+
+        setInterval(changeHeaderBackground, 3000);
+    </script>
+
+
+    </body>
+
+</html>
+<footer>
+    <p>&copy; Your Freelancing Services 2023</p>
+</footer>
